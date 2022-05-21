@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "root",
+    "password": "p@ssw0rd!",
+    "database": "node_sequelize1",
+    "host": "localhost",
+    "dialect": "postgres",
+    "privateKey": "privateKey"
+  },
+  "test": {
+    "username": "root",
+    "password": "p@ssw0rd!",
+    "database": "node_sequelize1",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "privateKey": "privateKey"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+       "ssl": {
+         "require": true,
+         "rejectUnauthorized": false
+       }
+     }
+   }
+}
